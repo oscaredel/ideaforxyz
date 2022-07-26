@@ -1,0 +1,18 @@
+<div id="<%= dom_id idea %>">
+  <p>
+    <strong>Title:</strong>
+    <%= idea.title %>
+  </p>
+
+  <p>Thought of <%= time_tag idea.created_at, "data-local": "time-ago" %></p>
+
+  <p>
+    <strong><%= pluralize idea.comments.count, "comment" %></strong>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= idea.description %>
+  </p>
+
+</div>
